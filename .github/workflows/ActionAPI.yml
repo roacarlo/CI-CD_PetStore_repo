@@ -1,4 +1,4 @@
-name: postman-pull-request
+name: postman-OCA-CP01
 'on':
   push:
     branches:
