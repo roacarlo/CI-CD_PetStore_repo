@@ -37,7 +37,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://172.25.240.1:8060/api/v1/PickUpCenter/HealthCheck"
+				"url": "{{url}}/HealthCheck"
 			},
 			"response": []
 		}
