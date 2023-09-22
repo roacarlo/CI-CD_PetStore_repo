@@ -9,9 +9,7 @@ name: postman-pull-request
 jobs:
   my-job:
     runs-on: ubuntu-latest
-    steps:
-        - name: Install dependencies
-          run: npm install
+    steps:       
         - name: Install newman
           run: npm install -g newman
         - name: Run the API and Postman's tests
