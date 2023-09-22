@@ -14,5 +14,4 @@ jobs:
         run: npm install -g newman
       - name: Run the API and Postman's tests
         run: >-
-          newman run "CP18-API-PickUpCenter_ByState_CasosValidos.json -e
-          Environment_OCA.json -d CP18_PickUpCente_ByState_Validos.csv"
+          newman run "CP01-API-PickUpCenter_HealthCheck_CasosValidos"
