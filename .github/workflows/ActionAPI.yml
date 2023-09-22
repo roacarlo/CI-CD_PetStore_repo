@@ -1,7 +1,11 @@
 name: postman-pull-request
 'on':
-  - push
-  - pull_request
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   build: null
   runs-on: ubuntu-latest
