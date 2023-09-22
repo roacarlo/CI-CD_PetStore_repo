@@ -14,4 +14,4 @@ jobs:
         run: npm install -g newman
       - name: Run the API and Postman's tests
         run: >-
-          newman run "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/CP01-API-PickUpCenter_HealthCheck_CasosValidos.json"
+          newman run "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/CP01-API-PickUpCenter_HealthCheck_CasosValidos.json" -e "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/Environment_OCA.json"
