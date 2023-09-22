@@ -15,5 +15,5 @@ jobs:
         - name: Run the API and Postman's tests
           run: >
             npm run start:dev &
-            newman run "OCA_APIs.json -e Environment_OCA.json -d
+            newman run "CP18-API-PickUpCenter_ByState_CasosValidos.json -e Environment_OCA.json -d
             CP18_PickUpCente_ByState_Validos.csv"
