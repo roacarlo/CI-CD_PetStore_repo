@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "19aaaec4-bb9c-4842-a045-cab7c0828b4f",
+		"name": "1CP01-API-PickUpCenter_HealthCheck_CasosValidos",
+		"description": "The PickUpCenter Service HTTP API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d26cb76a-2487-4837-beea-ac9e5dcd2d56",
+						"exec": [
+							"/*pm.test(\"Response time is less than 10 ms\", ()=> {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10);\r",
+							"});*/\r",
+							"\r",
+							"pm.test(\"CP01-Validar el estado de la API - Status code 200\", ()=> {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"CP01-Validar el estado de la API - Healthy?\", ()=> {\r",
+							"    pm.response.to.have.body(\"Healthy\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "893551cc-1088-448d-bdcf-61dcf792ce6f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/HealthCheck"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
