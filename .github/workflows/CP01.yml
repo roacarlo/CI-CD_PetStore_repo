@@ -1,4 +1,4 @@
-name: postman-OCA-CP01
+name: CP01
 'on':
   push:
     branches:
