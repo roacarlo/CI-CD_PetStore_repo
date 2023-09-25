@@ -1,4 +1,4 @@
-name: postman-pull-request
+name: ejemplo
 'on':
   - push
   - pull_request
