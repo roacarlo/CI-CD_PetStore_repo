@@ -14,4 +14,4 @@ jobs:
         run: npm install -g newman
       - name: Run API and Postman CP18-CVS
         run: >-
-          newman run "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/CP18-API-PickUpCenter_ByState_CasosValidos.json" -e "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/Environment_OCA.json" -d "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/CP18_PickUpCente_ByState_Validos.csv"
+          newman run "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/1CP18-API-PickUpCenter_ByState_CasosValidos.json" -e "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/Environment_OCA.json" -d "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/CP18_PickUpCente_ByState_Validos.csv"
