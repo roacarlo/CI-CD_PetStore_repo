@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "46e4333c-c058-46ce-b256-981876f9adb5",
-		"name": "DEMO_1CP18-API-PickUpCenter_ByState_CasosValidos",
+		"name": "1CP18-API-PickUpCenter_ByState_CasosValidos",
 		"description": "The PickUpCenter Service HTTP API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "17046425"
