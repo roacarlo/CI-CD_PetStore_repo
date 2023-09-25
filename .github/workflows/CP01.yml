@@ -10,10 +10,8 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Install dependencies
-        run: npm install
       - name: Install newman
         run: npm install -g newman
-      - name: Run the API and Postman's tests
+      - name: Ejecutar API Postman CP01
         run: >-
           newman run "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/CP01-API-PickUpCenter_HealthCheck_CasosValidos.json" -e "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/Environment_OCA.json"
