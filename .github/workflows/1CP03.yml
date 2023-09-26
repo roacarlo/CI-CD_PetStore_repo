@@ -14,4 +14,4 @@ jobs:
         run: npm install -g newman
       - name: Ejecutar API Postman CP01
         run: >-
-          newman run "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/1CP03-API-PickUpCenter_BranchOffices_CasosValidos" -e "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/Environment_OCA.json"
+          newman run "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/1CP03-API-PickUpCenter_BranchOffices_CasosValidos.json" -e "https://github.com/roacarlo/OCA_APIs/tree/master/Postman%20Collections/Environment_OCA.json"
