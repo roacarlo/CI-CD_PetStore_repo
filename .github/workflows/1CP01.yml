@@ -1,4 +1,4 @@
-name: CP01
+name: 1CP01
 'on':
   push:
     branches:
