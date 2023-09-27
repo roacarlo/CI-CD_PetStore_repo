@@ -14,4 +14,4 @@ jobs:
         run: npm install -g newman
       - name: Ejecutar GetFindByState
         run: >-
-          newman run "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/Get_FindByState.json" -e "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/petStore_Environment.json"
+              newman run "Get_FindByState.json" -e "petStore_Environment.json"
