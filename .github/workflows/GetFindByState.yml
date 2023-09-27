@@ -14,4 +14,4 @@ jobs:
         run: npm install -g newman
       - name: Ejecutar API Postman CP01
         run: >-
-          newman run "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/Get_FindByState.json" -e "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/PetStore_Environment.json"
+          newman run "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/Get_FindByState.json" -e "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/petStore_Environment.json"
