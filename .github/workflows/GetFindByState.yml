@@ -11,7 +11,16 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Install newman
-        run: npm install -g newman
+        run: |
+          npm install -g newman
+          npm install -g newman-reporter-htmlextra
+          
       - name: Ejecutar GetFindByState
         run: |
           newman run "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/Get_FindByState.json" -e "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/petStore_Environment.json" -r htmlextra --reporter-htmlextra-export SampleArtifact/report.html
+      
+      - name: Publicar Reporte
+        uses: actions/upload-artefact@v3
+        with:
+          name: Reports
+          path: SampleArtifact
