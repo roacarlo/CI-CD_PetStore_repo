@@ -15,7 +15,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://petstore.swagger.io/v2/pet/findByStatus?status={{status}}",
+					"raw": "https://petstore.swagger.io/v2/pet/findByStatus?status=",
 					"protocol": "https",
 					"host": [
 						"petstore",
@@ -30,7 +30,7 @@
 					"query": [
 						{
 							"key": "status",
-							"value": "{{status}}"
+							"value": ""
 						}
 					]
 				}
