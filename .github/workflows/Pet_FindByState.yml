@@ -15,5 +15,5 @@ jobs:
           npm install -g newman
           
       - name: Ejecutar Get_Pet_FindByState
-        run: |
+        run:
           newman run "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/Get_FindByState.json" -e "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/petStore_Environment.json"
