@@ -21,7 +21,3 @@ jobs:
       
       - name: publish test results
         working-directory: robot/tests
-        uses: actions/upload-artifact@v1
-        with:
-            name: report
-            path: report.html
