@@ -19,5 +19,6 @@ jobs:
         run: |
           newman run "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/Get_FindByState.json" -e "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/petStore_Environment.json" -r htmlextra --reporter-htmlextra-export SampleArtifact/report.html
       
-      - name: publish test results
-        working-directory: robot/tests
+      - name: print test results
+          working-directory: robot/tests
+          run: cat report.html
