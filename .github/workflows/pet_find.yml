@@ -1,0 +1,31 @@
+name: Automated API - Pet FindByState
+'on': workflow_dispatch
+jobs:
+  test-api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Create dir
+        run: mkdir TestArtifact
+        
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          
+      - name: Install newman
+        run: |
+          npm install -g newman
+          npm install -g newman-reporter-slackreporter
+          npm install -g newman-reporter-htmlextra
+          
+      - name: Run test
+        run: >-
+          newman run "Get_FindByState.json" -e "petStore_Environment.json" -r cli,htmlextra
+          --reporter-htmlextra-export testArtifacts/htmlreport.html
+          
+      - name: Output the results
+        uses: actions/upload-artifact@v3
+        with:
+          name: Reports
+          path: testArtifacts
