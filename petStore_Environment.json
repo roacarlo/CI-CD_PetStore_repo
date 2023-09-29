@@ -1,0 +1,15 @@
+{
+	"id": "563e36fa-91af-457d-9ac6-970f42935544",
+	"name": "PetStore_Environment",
+	"values": [
+		{
+			"key": "status",
+			"value": "sold",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-09-27T19:15:55.785Z",
+	"_postman_exported_using": "Postman/10.18.9"
+}
