@@ -16,4 +16,4 @@ jobs:
           
       - name: Ejecutar Get_Pet_FindByState
         run: |
-          newman run "Get_FindByState.json" -e "petStore_Environment.json"
+          newman run "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/Get_FindByState.json" -e "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/petStore_Environment.json"
