@@ -27,7 +27,7 @@ jobs:
           
       - name: Run test
         run: >-
-          newman run "Get_FindByState.json" -e "petStore_Environment.json" -r cli,htmlextra
+          newman run "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/Get_FindByState.json" -e "https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/petStore_Environment.json" -r cli,htmlextra
           --reporter-htmlextra-export testArtifacts/htmlreport.html
           
       - name: Output the results
