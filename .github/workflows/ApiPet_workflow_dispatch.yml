@@ -1,4 +1,4 @@
-name: Automated API - Pet FindByState
+name: 03102023 ApiPet_workflow_dispatch.yml
 'on': workflow_dispatch
 jobs:
   test-api:
