@@ -1,4 +1,4 @@
-name: 03102023_ApiPet_report_html
+name: 03102023_ApiPet_push_pullRequest html
 'on':
   push:
     branches:
