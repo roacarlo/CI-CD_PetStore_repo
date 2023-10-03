@@ -1,0 +1,16 @@
+name: Newman Run
+'on':
+  pull_request:
+    branches:
+      - master
+jobs:
+  newman:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: matt-ball/newman-action@master
+        with:
+          collection: >-
+            https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/Get_FindByState.json
+          environment: >-
+            https://github.com/roacarlo/CI-CD_PetStore_repo/tree/master/PostmanCollections/petStore_Environment.json
