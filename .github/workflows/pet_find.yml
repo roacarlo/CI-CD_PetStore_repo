@@ -1,8 +1,15 @@
 name: Automated API - Pet FindByState
-'on': workflow_dispatch
+#'on': workflow_dispatch
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   test-api:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
       - name: Create dir
@@ -22,7 +29,7 @@ jobs:
       - name: Run test
         run: >-
           newman run "Get_FindByState.json" -e "petStore_Environment.json" -r cli,htmlextra
-          --reporter-htmlextra-export testArtifacts/htmlreport.html
+          --reporter-htmlextra-export testArtifacts/reportEjecution.html
           
       - name: Output the results
         uses: actions/upload-artifact@v3
