@@ -1,4 +1,4 @@
-name: Automated API
+name: Automated API workflow_dispatch
 'on': workflow_dispatch
 jobs:
   test-api:
