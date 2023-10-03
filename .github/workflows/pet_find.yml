@@ -1,12 +1,5 @@
 name: Automated API - Pet FindByState
-#'on': workflow_dispatch
-'on':
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+'on': workflow_dispatch
 jobs:
   test-api:
     runs-on: windows-latest
