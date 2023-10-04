@@ -1,5 +1,8 @@
 name: Newman Run
 'on':
+  push:
+    branches:
+      - master
   pull_request:
     branches:
       - master
