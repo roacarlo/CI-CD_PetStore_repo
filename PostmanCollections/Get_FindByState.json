@@ -6,8 +6,8 @@
 	},
 	"item": [
 		{
-			"name": "findByStatus",
-			"id": "383e0d8f-ecab-4e9e-9381-876cc46e5920",
+			"name": "findByStatus_sold",
+			"id": "ec030d51-8525-480b-8211-ad6b9b565fd3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -15,16 +15,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://petstore.swagger.io/v2/pet/findByStatus?status=sold",
-					"protocol": "https",
+					"raw": "{{url}}/findByStatus?status=sold",
 					"host": [
-						"petstore",
-						"swagger",
-						"io"
+						"{{url}}"
 					],
 					"path": [
-						"v2",
-						"pet",
 						"findByStatus"
 					],
 					"query": [
@@ -33,7 +28,8 @@
 							"value": "sold"
 						}
 					]
-				}
+				},
+				"description": "Desc"
 			},
 			"response": []
 		}
