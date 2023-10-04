@@ -1,4 +1,4 @@
-name: 03102023 Automated API workflow_dispatch
+name: Ejemplo_Automated API workflow_dispatch
 'on': workflow_dispatch
 jobs:
   test-api:
