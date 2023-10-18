@@ -1,5 +1,11 @@
 name: Ejemplo_CROA
-'on': workflow_dispatch
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   test-api:
     runs-on: ubuntu-latest
